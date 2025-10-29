@@ -2,5 +2,5 @@
     <x-slot:heading>
         About Page
     </x-slot:heading>
-    About
+    Home
 </x-layout>
