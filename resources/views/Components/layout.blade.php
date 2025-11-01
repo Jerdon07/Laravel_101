@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <script src="https://cdn.tailwindcss.com"></script>
-        <title>{{ $slot }}</title>
+        <title>Laravel</title>
     </head>
     <body class="h-full">
         <div class="min-h-full">
@@ -17,7 +17,7 @@
                             <div class="ml-10 flex items-baseline space-x-4">
                                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
                                 <x-nav-link href="/" :active="request() -> is('/')"> Home </x-nav-list>
-                                <x-nav-link href="/about" :active="request() -> is('about')"> About </x-nav-list>
+                                <x-nav-link href="/jobs" :active="request() -> is('jobs')"> Jobs </x-nav-list>
                                 <x-nav-link href="/contact"  :active="request() -> is('contact')"> Contact </x-nav-list>
                             </div>
                         </div>
@@ -33,7 +33,7 @@
         </header>
         <main>
             <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-                <p>You are now in {{ $slot }} page!</p>
+                {{ $slot }}
             </div>
         </main>
         </div>
